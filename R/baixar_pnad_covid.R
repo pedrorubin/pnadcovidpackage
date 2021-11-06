@@ -1,7 +1,7 @@
 #' Baixa e descompacta os microdados da PNAD COVID
 #'
 #' Baixa e descompacta os microdados da PNAD COVID (é preciso acesso a internet)
-#' @param ano Mês da PNAD COVID (número)
+#' @param mes Mês da PNAD COVID (número)
 #' @param caminho_pasta A pasta (o caminho para a pasta) na qual os arquivos serão guardados (se não existir, a pasta será criada)
 #' @return Os arquivos de microdados (txt) na pasta designada
 #' @examples baixar_pnad_covid(mes = 5, caminho_pasta = "./microdata");

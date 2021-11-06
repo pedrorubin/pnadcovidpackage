@@ -7,9 +7,9 @@
 baixar_pnad_covid(mes, caminho_pasta)
 }
 \arguments{
-\item{caminho_pasta}{A pasta (o caminho para a pasta) na qual os arquivos serão guardados (se não existir, a pasta será criada)}
+\item{mes}{Mês da PNAD COVID (número)}
 
-\item{ano}{Mês da PNAD COVID (número)}
+\item{caminho_pasta}{A pasta (o caminho para a pasta) na qual os arquivos serão guardados (se não existir, a pasta será criada)}
 }
 \value{
 Os arquivos de microdados (txt) na pasta designada
