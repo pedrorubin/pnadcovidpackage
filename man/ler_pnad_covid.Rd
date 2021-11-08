@@ -4,7 +4,7 @@
 \alias{ler_pnad_covid}
 \title{Carregar os microdados da PNAD COVID}
 \usage{
-ler_pnad_covid(mes)
+ler_pnad_covid(mes, caminho_pnadcovid)
 }
 \arguments{
 \item{mes}{Mês da PNAD COVID (número)}

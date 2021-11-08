@@ -8,7 +8,7 @@
 #' @seealso baixar_pnad_covid
 #' @export
 
-ler_pnad_covid <- function(mes){
+ler_pnad_covid <- function(mes, caminho_pnadcovid){
   mes <- as.character(mes)
   mes <- str_pad(mes, 2, "left", "0")
 
