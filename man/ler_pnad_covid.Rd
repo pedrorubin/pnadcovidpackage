@@ -4,12 +4,12 @@
 \alias{ler_pnad_covid}
 \title{Carregar os microdados da PNAD COVID}
 \usage{
-ler_pnad_covid(mes, caminho_pnadcovid)
+ler_pnad_covid(mes, caminho_pnad_covid)
 }
 \arguments{
 \item{mes}{Mês da PNAD COVID (número)}
 
-\item{caminho_pnadcovid}{A pasta na qual os arquivos de microdados estão guardados (em geral a mesma utilizada na função baixar_pnad_covid)}
+\item{caminho_pnad_covid}{A pasta na qual os arquivos de microdados estão guardados (em geral a mesma utilizada na função baixar_pnad_covid)}
 }
 \value{
 Um dataframe com todos os microdados

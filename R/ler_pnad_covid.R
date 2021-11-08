@@ -2,17 +2,17 @@
 #'
 #' Carregar (para o R) os microdados da PNAD COVID
 #' @param mes Mês da PNAD COVID (número)
-#' @param caminho_pnadcovid A pasta na qual os arquivos de microdados estão guardados (em geral a mesma utilizada na função baixar_pnad_covid)
+#' @param caminho_pnad_covid A pasta na qual os arquivos de microdados estão guardados (em geral a mesma utilizada na função baixar_pnad_covid)
 #' @return Um dataframe com todos os microdados
 #' @examples ler_pnad_covid(7, "./pasta_microdados");
 #' @seealso baixar_pnad_covid
 #' @export
 
-ler_pnad_covid <- function(mes, caminho_pnadcovid){
+ler_pnad_covid <- function(mes, caminho_pnad_covid){
   mes <- as.character(mes)
   mes <- str_pad(mes, 2, "left", "0")
 
-  pnad <- glue("./dados/PNAD_COVID_{mes}2020.csv")
+  pnad <- glue("caminho_pnad_covid/PNAD_COVID_{mes}2020.csv")
 
   pnad_covid <- read_csv(as.character(pnad),
                          col_types = cols(.default = "c")) %>%
