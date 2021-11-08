@@ -12,7 +12,7 @@ ler_pnad_covid <- function(mes, caminho_pnad_covid){
   mes <- as.character(mes)
   mes <- str_pad(mes, 2, "left", "0")
 
-  pnad <- glue("caminho_pnad_covid/PNAD_COVID_{mes}2020.csv")
+  pnad <- glue("{caminho_pnad_covid}/PNAD_COVID_{mes}2020.csv")
 
   pnad_covid <- read_csv(as.character(pnad),
                          col_types = cols(.default = "c")) %>%
